@@ -126,6 +126,8 @@ unit-test/
 
 └── README.md
 
+```
+
 # Cypress E2E Testing – SauceDemo
 
 ## Giới thiệu
