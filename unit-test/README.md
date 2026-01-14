@@ -61,9 +61,7 @@ Chương trình gồm lớp `StudentAnalyzer` với hai phương thức chính:
 ## 3. Công nghệ sử dụng
 
 - Ngôn ngữ: Java
-
-- Kiểm thử đơn vị: :contentReference\[oaicite:0]{index=0}
-
+  
 - Quản lý mã nguồn: Git \& GitHub
 
 
