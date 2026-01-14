@@ -1,0 +1,4 @@
+Label,# Samples,Average,Min,Max,Std. Dev.,Error %,Throughput,Received KB/sec,Sent KB/sec,Avg. Bytes
+GET Wikipedia Home,100,297,104,678,174.31,0.000%,3.27568,507.12,0.66,158529.0
+GET Main Page,100,389,172,772,198.84,0.000%,3.32447,776.47,1.43,239167.0
+TOTAL,200,343,104,772,192.59,0.000%,6.50978,1264.12,2.06,198848.0

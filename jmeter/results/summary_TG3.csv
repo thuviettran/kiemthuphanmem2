@@ -1,0 +1,4 @@
+Label,# Samples,Average,Min,Max,Std. Dev.,Error %,Throughput,Received KB/sec,Sent KB/sec,Avg. Bytes
+GET Software Testing,604,1410,219,5369,506.10,0.000%,9.87428,4207.79,4.39,436363.1
+GET Performance Testing,588,441,125,2089,216.51,0.000%,9.93075,557.25,4.47,57460.3
+TOTAL,1192,932,125,5369,622.66,0.000%,19.48700,4747.19,8.72,249454.7
