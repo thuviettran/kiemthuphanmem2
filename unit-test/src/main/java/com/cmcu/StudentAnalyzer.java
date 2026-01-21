@@ -1,7 +1,8 @@
+package com.cmcu;
+
 import java.util.List;
 
 public class StudentAnalyzer {
-
     public int countExcellentStudents(List<Double> scores) {
         if (scores == null || scores.isEmpty()) {
             return 0;
@@ -18,6 +19,7 @@ public class StudentAnalyzer {
         return count;
         
     }
+    
     public double calculateValidAverage(List<Double> scores) {
          if (scores == null || scores.isEmpty()) {
             return 0.0;
@@ -38,8 +40,5 @@ public class StudentAnalyzer {
         }
 
         return sum / count;
-    }
+    } 
 }
-
-
-
