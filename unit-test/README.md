@@ -79,14 +79,18 @@ Chương trình gồm lớp `StudentAnalyzer` với hai phương thức chính:
 unit-test/
 
 ├── src/
-
-│   └── StudentAnalyzer.java
-
-├── test/
-
-│   └── StudentAnalyzerTest.java
-
+|     └── main/java/com/cmcu
+│         └── StudentAnalyzer.java
+|    └── test/java
+|           └── StudentAnalyzerTest.java
+├── target/
+│   └── class/com/cmcu
+|   └── maven-status/maven
+|   └── site/jacoco
+|   └── surefire-reports
+|   └── test-classes
 └── README.md
+└── pom.xml
 
 
 
