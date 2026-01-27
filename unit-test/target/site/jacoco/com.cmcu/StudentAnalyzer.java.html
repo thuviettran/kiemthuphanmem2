@@ -4,42 +4,46 @@ import java.util.List;
 
 <span class="fc" id="L5">public class StudentAnalyzer {</span>
     public int countExcellentStudents(List&lt;Double&gt; scores) {
-<span class="fc bfc" id="L7" title="All 4 branches covered.">        if (scores == null || scores.isEmpty()) {</span>
+<span class="fc bfc" id="L7" title="All 2 branches covered.">        if (scores == null) {</span>
 <span class="fc" id="L8">            return 0;</span>
-        }
+    }
 
-<span class="fc" id="L11">        int count = 0;</span>
-<span class="fc bfc" id="L12" title="All 2 branches covered.">        for (double score : scores) {</span>
-<span class="fc bfc" id="L13" title="All 4 branches covered.">            if (score &gt;= 0 &amp;&amp; score &lt;= 10) {     </span>
-<span class="fc bfc" id="L14" title="All 2 branches covered.">                if (score &gt;= 8.0) {</span>
-<span class="fc" id="L15">                    count++;</span>
+<span class="fc bfc" id="L11" title="All 2 branches covered.">        if (scores.isEmpty()) {</span>
+<span class="fc" id="L12">            return 0;</span>
+    }
+
+<span class="fc" id="L15">        int count = 0;</span>
+<span class="fc bfc" id="L16" title="All 2 branches covered.">        for (double score : scores) {</span>
+<span class="fc bfc" id="L17" title="All 4 branches covered.">            if (score &gt;= 0 &amp;&amp; score &lt;= 10) {     </span>
+<span class="fc bfc" id="L18" title="All 2 branches covered.">                if (score &gt;= 8.0) {</span>
+<span class="fc" id="L19">                    count++;</span>
                 }
             }
-<span class="fc" id="L18">        }</span>
-<span class="fc" id="L19">        return count;</span>
+<span class="fc" id="L22">        }</span>
+<span class="fc" id="L23">        return count;</span>
         
     }
     
     public double calculateValidAverage(List&lt;Double&gt; scores) {
-<span class="pc bpc" id="L24" title="1 of 4 branches missed.">         if (scores == null || scores.isEmpty()) {</span>
-<span class="fc" id="L25">            return 0.0;</span>
+<span class="fc bfc" id="L28" title="All 4 branches covered.">         if (scores == null || scores.isEmpty()) {</span>
+<span class="fc" id="L29">            return 0.0;</span>
         }
 
-<span class="fc" id="L28">        double sum = 0;</span>
-<span class="fc" id="L29">        int count = 0;</span>
+<span class="fc" id="L32">        double sum = 0;</span>
+<span class="fc" id="L33">        int count = 0;</span>
 
-<span class="fc bfc" id="L31" title="All 2 branches covered.">        for (double score : scores) {</span>
-<span class="fc bfc" id="L32" title="All 4 branches covered.">            if (score &gt;= 0 &amp;&amp; score &lt;= 10) {     // validate</span>
-<span class="fc" id="L33">                sum += score;</span>
-<span class="fc" id="L34">                count++;</span>
+<span class="fc bfc" id="L35" title="All 2 branches covered.">        for (double score : scores) {</span>
+<span class="fc bfc" id="L36" title="All 4 branches covered.">            if (score &gt;= 0 &amp;&amp; score &lt;= 10) {     // validate</span>
+<span class="fc" id="L37">                sum += score;</span>
+<span class="fc" id="L38">                count++;</span>
             }
-<span class="fc" id="L36">        }</span>
+<span class="fc" id="L40">        }</span>
 
-<span class="fc bfc" id="L38" title="All 2 branches covered.">        if (count == 0) {</span>
-<span class="fc" id="L39">            return 0.0;</span>
+<span class="fc bfc" id="L42" title="All 2 branches covered.">        if (count == 0) {</span>
+<span class="fc" id="L43">            return 0.0;</span>
         }
 
-<span class="fc" id="L42">        return sum / count;</span>
+<span class="fc" id="L46">        return sum / count;</span>
     } 
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.11.202310140853</span></div></body></html>

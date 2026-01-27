@@ -4,7 +4,11 @@ import java.util.List;
 
 public class StudentAnalyzer {
     public int countExcellentStudents(List<Double> scores) {
-        if (scores == null || scores.isEmpty()) {
+        if (scores == null) {
+            return 0;
+        }
+
+        if (scores.isEmpty()) {
             return 0;
         }
 

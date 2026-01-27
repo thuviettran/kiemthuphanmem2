@@ -56,6 +56,14 @@ public class StudentAnalyzerTest {
     }
 
     // ===== calculateValidAverage =====
+    @Test
+        public void testCalculateValidAverage_EmptyList() {
+        StudentAnalyzer analyzer = new StudentAnalyzer();
+
+        assertEquals(0.0,
+                analyzer.calculateValidAverage(Collections.emptyList()),
+                0.01);
+        }
 
     @Test
     public void testCalculateValidAverage_MixedValidInvalid() {
